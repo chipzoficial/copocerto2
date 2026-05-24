@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --page-bg: #f4eef8;
+  --surface: #fffdfc;
+  --surface-soft: #f7f1f8;
+  --surface-strong: #3e0f56;
+  --surface-stronger: #22062f;
+  --surface-accent: #5f1c81;
+  --line-soft: rgba(94, 34, 116, 0.12);
+  --ink-strong: #2c163a;
+  --ink-base: #5a4963;
+  --ink-muted: #8b7794;
+  --cta: #b7e533;
+  --cta-strong: #97cd11;
+  --danger: #d14b69;
+  --warning: #f39c45;
+  --success: #42a86b;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--surface);
+  --color-foreground: var(--ink-strong);
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(131, 57, 167, 0.2), transparent 32%),
+    linear-gradient(180deg, #f7f0fa 0%, #f8f4f9 48%, #f5eef8 100%);
+  color: var(--ink-strong);
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(161, 220, 34, 0.28);
+}
+
+.app-shell {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.brand-wordmark {
+  font-family: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+.soft-divider {
+  border-color: var(--line-soft);
+}
+
+.glow-header {
+  background:
+    radial-gradient(circle at top right, rgba(183, 229, 51, 0.18), transparent 28%),
+    radial-gradient(circle at left bottom, rgba(170, 86, 207, 0.18), transparent 22%),
+    linear-gradient(180deg, #441059 0%, #2d083d 100%);
+}
+
+.mobile-frame {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 253, 252, 1) 100%);
+  box-shadow:
+    0 30px 80px rgba(56, 17, 78, 0.14),
+    0 10px 24px rgba(56, 17, 78, 0.08);
+}
+
+.desktop-accent {
+  background:
+    radial-gradient(circle at top left, rgba(210, 114, 255, 0.3), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(183, 229, 51, 0.22), transparent 24%),
+    linear-gradient(180deg, #f7f0fa 0%, #f2ebf6 100%);
 }

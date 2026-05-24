@@ -1,0 +1,33 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="680" rx="48" fill="url(#bg)"/>
+  <ellipse cx="965" cy="132" rx="220" ry="170" fill="#8C36A3" fill-opacity="0.35"/>
+  <ellipse cx="158" cy="592" rx="240" ry="144" fill="#B7E533" fill-opacity="0.18"/>
+  <path d="M620 415C620 303.402 710.402 213 822 213H1029C1122.34 213 1198 288.663 1198 382V593H799C700.16 593 620 512.84 620 414V415Z" fill="#2A072F"/>
+  <ellipse cx="770" cy="488" rx="250" ry="78" fill="#6E275F" fill-opacity="0.4"/>
+  <path d="M802 240C889 240 955 283 977 357C998 428 973 520 919 564H691C631 520 603 432 626 355C650 279 716 240 802 240Z" fill="#FDF9F2"/>
+  <path d="M710 307C768 262 846 262 902 307L947 398C954 444 946 493 917 535H687C659 493 650 444 657 398L710 307Z" fill="url(#cup)"/>
+  <ellipse cx="804" cy="307" rx="175" ry="50" fill="#FFFFFC"/>
+  <ellipse cx="804" cy="320" rx="163" ry="35" fill="#4E134E"/>
+  <path d="M664 311C664 311 704 279 763 281C804 283 843 316 883 317C928 318 952 292 952 292V322C952 322 920 348 875 348C834 348 792 316 751 316C707 316 664 341 664 341V311Z" fill="#2B0B2B"/>
+  <ellipse cx="720" cy="315" rx="44" ry="48" fill="#F8E0A5"/>
+  <ellipse cx="754" cy="323" rx="40" ry="43" fill="#FCE6AA"/>
+  <ellipse cx="788" cy="327" rx="36" ry="40" fill="#FFE9B7"/>
+  <circle cx="861" cy="322" r="34" fill="#E6405B"/>
+  <circle cx="900" cy="336" r="31" fill="#FF5E69"/>
+  <circle cx="874" cy="353" r="26" fill="#D83146"/>
+  <path d="M821 303C866 302 911 318 934 352C904 367 859 373 815 371C771 369 722 359 687 334C722 312 771 304 821 303Z" fill="#B88639"/>
+  <path d="M677 525C720 561 878 564 927 525V555C895 587 719 590 677 555V525Z" fill="#5A1A67"/>
+  <path d="M925 561C873 581 738 580 681 560L668 587C736 618 874 618 938 589L925 561Z" fill="#2D0535"/>
+  <path d="M485 602C516 561 572 549 610 573C644 595 684 597 721 580C699 628 657 667 587 673C538 677 508 651 485 602Z" fill="#6AAA2D"/>
+  <path d="M1092 135C1076 150 1052 147 1032 139C1049 121 1066 110 1085 111C1105 112 1108 125 1092 135Z" fill="#B7E533"/>
+  <defs>
+    <linearGradient id="bg" x1="96" y1="70" x2="1095" y2="627" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50115E"/>
+      <stop offset="1" stop-color="#2B042F"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="805" y1="281" x2="805" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#752C79"/>
+      <stop offset="1" stop-color="#3A0B47"/>
+    </linearGradient>
+  </defs>
+</svg>
