@@ -23,18 +23,19 @@ export default function HomePage() {
 
   return (
     <CustomerShell>
-      <div className="min-h-screen bg-[var(--surface)]">
-        <header className="glow-header px-5 pb-7 pt-5 text-white">
+      <div className="min-h-screen bg-[var(--surface)] pb-30">
+        <header className="glow-header relative overflow-hidden px-5 pb-8 pt-5 text-white">
+          <div className="absolute inset-x-0 top-0 h-16 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_72%)]" />
           <div className="flex items-start justify-between">
             <div>
               <p className="brand-wordmark text-[2.1rem] font-extrabold tracking-tight">Açaí da Casa</p>
               <p className="mt-1 text-base text-white/86">Olá, prazer ter você aqui! 💜</p>
             </div>
             <div className="flex gap-2">
-              <button className="flex size-11 items-center justify-center rounded-full bg-white/10">
+              <button className="flex size-11 items-center justify-center rounded-full bg-white/10 backdrop-blur">
                 <BellIcon size={18} />
               </button>
-              <button className="flex size-11 items-center justify-center rounded-full bg-white/10">
+              <button className="flex size-11 items-center justify-center rounded-full bg-white/10 backdrop-blur">
                 <UserIcon size={18} />
               </button>
             </div>
@@ -45,10 +46,11 @@ export default function HomePage() {
           </div>
         </header>
 
-        <section className="-mt-4 rounded-t-[34px] bg-[var(--surface)] px-5 pb-24 pt-5">
+        <section className="-mt-4 rounded-t-[34px] bg-[linear-gradient(180deg,#fffdfc_0%,#fdf9fb_100%)] px-5 pb-8 pt-4">
           <HeroBanner {...bannerPrincipal} />
 
-          <div id="categorias" className="mt-5 flex gap-3 overflow-x-auto pb-1">
+          <div className="mt-5 rounded-[28px] bg-white px-4 py-4 shadow-[0_16px_38px_rgba(41,13,58,0.04)]">
+            <div id="categorias" className="hide-scrollbar flex gap-3 overflow-x-auto pb-1">
             {categorias.map((categoria, index) => (
               <button
                 key={categoria.id}
@@ -57,16 +59,17 @@ export default function HomePage() {
                     ? "border-transparent bg-[var(--surface-accent)] text-white"
                     : "border-[var(--line-soft)] bg-white text-[var(--ink-base)]"
                 }`}
-              >
-                <span>{chipsEmoji[categoria.icone]}</span>
-                {categoria.nome}
-              </button>
-            ))}
+                >
+                  <span>{chipsEmoji[categoria.icone]}</span>
+                  {categoria.nome}
+                </button>
+              ))}
+            </div>
           </div>
 
           <section className="mt-7">
             <SectionHeader titulo="Os mais pedidos" acao="Ver todos" />
-            <div className="mt-4 flex gap-3 overflow-x-auto pb-2">
+            <div className="hide-scrollbar mt-4 flex gap-3 overflow-x-auto pb-2">
               {maisPedidos.map((produto) => (
                 <ProductCard key={produto.id} produto={produto} />
               ))}
@@ -82,9 +85,9 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section className="mt-8 rounded-[30px] bg-[linear-gradient(135deg,#3c0d50_0%,#250530_100%)] px-5 py-5 text-white">
+          <section className="mt-8 overflow-hidden rounded-[32px] bg-[linear-gradient(135deg,#3c0d50_0%,#250530_100%)] px-5 py-5 text-white shadow-[0_24px_54px_rgba(43,7,50,0.12)]">
             <div className="flex items-center gap-4">
-              <div className="relative h-28 w-24 overflow-hidden rounded-[22px]">
+              <div className="relative h-28 w-12 overflow-hidden rounded-[999px] bg-white/10">
                 <Image src="/images/combo-familia.svg" alt="Combo família" fill className="object-cover" />
               </div>
               <div>
